@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.env
+input-videos/*
+!input-videos/.gitkeep
+output-videos/
+transcripts/
+*.ass
+*.wav
+.DS_Store
+Thumbs.db
+*.swp
+.venv
+.env

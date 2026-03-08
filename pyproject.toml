@@ -1,0 +1,23 @@
+[project]
+name = "polysub"
+version = "0.1.0"
+description = "Trilingual subtitle burner for Instagram Reels"
+requires-python = ">=3.11"
+dependencies = [
+    "openai-whisper>=20250625",
+    "deepl>=1.28.0",
+    "ffmpeg-python>=0.2.0",
+    "rich>=14.3.3",
+    "prompt-toolkit>=3.0.50",
+    "python-dotenv>=1.2.2",
+]
+
+[project.scripts]
+reels-sub = "main:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main", "transcribe", "subtitles"]
